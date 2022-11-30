@@ -2,8 +2,18 @@
   "id": "https://example.org/textbook/001",
   "type": "Concept",
   "prefLabel": {
+    "en": "Elementary School",
     "ja": "小学校"
   },
+  "narrower": [
+    {
+      "id": "https://example.org/textbook/001010",
+      "prefLabel": {
+        "en": "Japanese Language",
+        "ja": "国語"
+      }
+    }
+  ],
   "inScheme": {
     "id": "https://example.org/textbook/",
     "title": {
