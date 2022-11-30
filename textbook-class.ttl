@@ -44,7 +44,7 @@ ex:010010800 a skos:Concept;
 
 ex:001020 a skos:Concept;
   skos:prefLabel "社会"@ja, "Social Studies"@en;
-  skos:narrower ex:001020100, ex:001020500
+  skos:narrower ex:001020100, ex:001020500;
   skos:notation "020";
   skos:inScheme ex: .
 ex:001020100 a skos:Concept;
@@ -54,6 +54,16 @@ ex:001020100 a skos:Concept;
 ex:001020500 a skos:Concept;
   skos:prefLabel "地図"@ja, "Map"@en;
   skos:notation "500";
+  skos:inScheme ex: .
+
+ex:001030 a skos:Concept;
+  skos:prefLabel "算数"@ja, "Arithmetic"@en;
+  skos:narrower ex:001030100;
+  skos:notation "030";
+  skos:inScheme ex: .
+ex:001030100 a skos:Concept;
+  skos:prefLabel "算数"@ja, "Arithmetic"@en;
+  skos:notation "100";
   skos:inScheme ex: .
 
 ex:002010 a skos:Concept;
