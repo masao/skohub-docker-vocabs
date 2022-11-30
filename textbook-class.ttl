@@ -23,6 +23,13 @@ ex:003 a skos:Concept;
 
 ex:001010 a skos:Concept;
   skos:prefLabel "国語"@ja, "Japanese Language"@en;
+  skos:narrower ex:010010500, ex:010010800;
+  skos:inScheme ex: .
+ex:010010500 a skos:Concept;
+  skos:prefLabel "書写"@ja, "Penmanship"@en;
+  skos:inScheme ex: .
+ex:010010800 a skos:Concept;
+  skos:prefLabel "ローマ字"@ja, "Alphabetical Transcriptions"@en;
   skos:inScheme ex: .
 
 ex:002010 a skos:Concept;
