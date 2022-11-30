@@ -1,0 +1,12 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <https://example.org/textbook/>.
+
+ex: a skos:ConceptScheme;
+    dct:title "Textbook Classification (Demo)"@en, "教科書分類 (デモ版)"@ja;
+    dct:creator "高久雅生"@ja, "Masao Takaku"@en;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept ex:001 .
+
+ex:001 a skos:Concept;
+  skos:prefLabel "小学校"@ja;
