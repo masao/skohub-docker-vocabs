@@ -9,5 +9,9 @@ ex: a skos:ConceptScheme;
     skos:hasTopConcept ex:001 .
 
 ex:001 a skos:Concept;
-  skos:prefLabel "小学校"@ja;
-  skos:topConceptOf ex: .
+  skos:prefLabel "小学校"@ja, "Elementary School"@en;
+  skos:topConceptOf ex:;
+  skos:narrower ex:001010 .
+
+ex:001010 a skos:Concept;
+  skos:prefLabel "国語"@ja, "Japanese Literature"@en.
