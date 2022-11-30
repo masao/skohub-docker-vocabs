@@ -5,6 +5,9 @@
     "en": "Alphabetical Transcriptions",
     "ja": "ローマ字"
   },
+  "notation": [
+    "800"
+  ],
   "broader": {
     "id": "https://example.org/textbook/001010",
     "prefLabel": {

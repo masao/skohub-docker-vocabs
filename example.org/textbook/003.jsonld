@@ -5,6 +5,9 @@
     "en": "Upper Secondary School",
     "ja": "高等学校"
   },
+  "notation": [
+    "003"
+  ],
   "narrower": [
     {
       "id": "https://example.org/textbook/003010",

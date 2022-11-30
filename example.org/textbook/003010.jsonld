@@ -5,6 +5,9 @@
     "en": "Japanese Language",
     "ja": "国語"
   },
+  "notation": [
+    "010"
+  ],
   "broader": {
     "id": "https://example.org/textbook/003",
     "prefLabel": {

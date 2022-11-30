@@ -5,6 +5,9 @@
     "en": "Elementary School",
     "ja": "小学校"
   },
+  "notation": [
+    "001"
+  ],
   "narrower": [
     {
       "id": "https://example.org/textbook/001010",

@@ -5,6 +5,9 @@
     "en": "Lower Secondary School",
     "ja": "中学校"
   },
+  "notation": [
+    "002"
+  ],
   "narrower": [
     {
       "id": "https://example.org/textbook/002010",

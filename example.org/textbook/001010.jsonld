@@ -5,7 +5,17 @@
     "en": "Japanese Language",
     "ja": "国語"
   },
+  "notation": [
+    "010"
+  ],
   "narrower": [
+    {
+      "id": "https://example.org/textbook/001010100",
+      "prefLabel": {
+        "en": "Japanese Language",
+        "ja": "国語"
+      }
+    },
     {
       "id": "https://example.org/textbook/010010500",
       "prefLabel": {
