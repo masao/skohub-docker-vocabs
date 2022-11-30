@@ -42,6 +42,20 @@ ex:010010800 a skos:Concept;
   skos:notation "800";
   skos:inScheme ex: .
 
+ex:001020 a skos:Concept;
+  skos:prefLabel "社会"@ja, "Social Studies"@en;
+  skos:narrower ex:001020100, ex:001020500
+  skos:notation "020";
+  skos:inScheme ex: .
+ex:001020100 a skos:Concept;
+  skos:prefLabel "社会"@ja, "Social Studies"@en;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:001020500 a skos:Concept;
+  skos:prefLabel "地図"@ja, "Map"@en;
+  skos:notation "500";
+  skos:inScheme ex: .
+
 ex:002010 a skos:Concept;
   skos:prefLabel "国語"@ja, "Japanese Language"@en;
   skos:notation "010";
