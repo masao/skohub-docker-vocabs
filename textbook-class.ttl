@@ -19,9 +19,16 @@ ex:002 a skos:Concept;
 ex:003 a skos:Concept;
   skos:prefLabel "高等学校"@ja, "Upper Secondary School"@en;
   skos:topConceptOf ex:;
-  skos:narrower ex:002010 .
-
+  skos:narrower ex:003010 .
 
 ex:001010 a skos:Concept;
+  skos:prefLabel "国語"@ja, "Japanese Language"@en;
+  skos:inScheme ex: .
+
+ex:002010 a skos:Concept;
+  skos:prefLabel "国語"@ja, "Japanese Language"@en;
+  skos:inScheme ex: .
+
+ex:003010 a skos:Concept;
   skos:prefLabel "国語"@ja, "Japanese Language"@en;
   skos:inScheme ex: .
