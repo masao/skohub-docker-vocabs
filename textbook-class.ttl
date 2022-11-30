@@ -6,12 +6,22 @@ ex: a skos:ConceptScheme;
     dct:title "Textbook Classification (Demo)"@en, "教科書分類 (デモ版)"@ja;
     dct:creator "高久雅生"@ja, "Masao Takaku"@en;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept ex:001 .
+    skos:hasTopConcept ex:001, ex:002, ex:003 .
 
 ex:001 a skos:Concept;
   skos:prefLabel "小学校"@ja, "Elementary School"@en;
   skos:topConceptOf ex:;
   skos:narrower ex:001010 .
+ex:002 a skos:Concept;
+  skos:prefLabel "中学校"@ja, "Lower Secondary School"@en;
+  skos:topConceptOf ex:;
+  skos:narrower ex:002010 .
+ex:003 a skos:Concept;
+  skos:prefLabel "高等学校"@ja, "Upper Secondary School"@en;
+  skos:topConceptOf ex:;
+  skos:narrower ex:002010 .
+
 
 ex:001010 a skos:Concept;
-  skos:prefLabel "国語"@ja, "Japanese Literature"@en.
+  skos:prefLabel "国語"@ja, "Japanese Language"@en;
+  skos:inScheme ex: .
