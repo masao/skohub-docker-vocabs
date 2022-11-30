@@ -5,6 +5,22 @@
     "en": "Japanese Language",
     "ja": "国語"
   },
+  "narrower": [
+    {
+      "id": "https://example.org/textbook/010010500",
+      "prefLabel": {
+        "en": "Penmanship",
+        "ja": "書写"
+      }
+    },
+    {
+      "id": "https://example.org/textbook/010010800",
+      "prefLabel": {
+        "en": "Alphabetical Transcriptions",
+        "ja": "ローマ字"
+      }
+    }
+  ],
   "broader": {
     "id": "https://example.org/textbook/001",
     "prefLabel": {
