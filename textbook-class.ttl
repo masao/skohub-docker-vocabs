@@ -7,71 +7,953 @@ ex: a skos:ConceptScheme;
     dct:creator "高久雅生"@ja, "Masao Takaku"@en;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     skos:hasTopConcept ex:001, ex:002, ex:003 .
-
-ex:001 a skos:Concept;
+#TTL
+ex:010 a skos:Concept;
   skos:prefLabel "小学校"@ja, "Elementary School"@en;
   skos:topConceptOf ex:;
-  skos:notation "001";
-  skos:narrower ex:001010 .
-ex:002 a skos:Concept;
-  skos:prefLabel "中学校"@ja, "Lower Secondary School"@en;
+  skos:notation "010".
+ex:020 a skos:Concept;
+  skos:prefLabel "中学校"@ja, "Lower Secondary Schoo"@en;
   skos:topConceptOf ex:;
-  skos:notation "002";
-  skos:narrower ex:002010 .
-ex:003 a skos:Concept;
+  skos:notation "020".
+ex:030 a skos:Concept;
   skos:prefLabel "高等学校"@ja, "Upper Secondary School"@en;
   skos:topConceptOf ex:;
-  skos:notation "003";
-  skos:narrower ex:003010 .
+  skos:notation "030".
 
-ex:001010 a skos:Concept;
+ex:010 skos:narrower ex:010010 .
+ex:010010 a skos:Concept;
   skos:prefLabel "国語"@ja, "Japanese Language"@en;
-  skos:narrower ex:001010100, ex:010010500, ex:010010800;
   skos:notation "010";
   skos:inScheme ex: .
-ex:001010100 a skos:Concept;
+ex:010 skos:narrower ex:010020 .
+ex:010020 a skos:Concept;
+  skos:prefLabel "社会"@ja, "Social Studies"@en;
+  skos:notation "020";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010030 .
+ex:010030 a skos:Concept;
+  skos:prefLabel "算数"@ja, "Arithmetic"@en;
+  skos:notation "030";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010040 .
+ex:010040 a skos:Concept;
+  skos:prefLabel "理科"@ja;
+  skos:notation "040";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010045 .
+ex:010045 a skos:Concept;
+  skos:prefLabel "生活"@ja;
+  skos:notation "045";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010050 .
+ex:010050 a skos:Concept;
+  skos:prefLabel "音楽"@ja;
+  skos:notation "050";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010055 .
+ex:010055 a skos:Concept;
+  skos:prefLabel "図画・工作"@ja;
+  skos:notation "055";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010060 .
+ex:010060 a skos:Concept;
+  skos:prefLabel "家庭"@ja;
+  skos:notation "060";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010070 .
+ex:010070 a skos:Concept;
+  skos:prefLabel "体育"@ja;
+  skos:notation "070";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010075 .
+ex:010075 a skos:Concept;
+  skos:prefLabel "外国語"@ja;
+  skos:notation "075";
+  skos:inScheme ex: .
+ex:010 skos:narrower ex:010080 .
+ex:010080 a skos:Concept;
+  skos:prefLabel "道徳"@ja;
+  skos:notation "080";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020010 .
+ex:020010 a skos:Concept;
+  skos:prefLabel "国語"@ja;
+  skos:notation "010";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020020 .
+ex:020020 a skos:Concept;
+  skos:prefLabel "社会"@ja;
+  skos:notation "020";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020030 .
+ex:020030 a skos:Concept;
+  skos:prefLabel "数学"@ja;
+  skos:notation "030";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020040 .
+ex:020040 a skos:Concept;
+  skos:prefLabel "理科"@ja;
+  skos:notation "040";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020050 .
+ex:020050 a skos:Concept;
+  skos:prefLabel "音楽"@ja;
+  skos:notation "050";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020055 .
+ex:020055 a skos:Concept;
+  skos:prefLabel "美術"@ja;
+  skos:notation "055";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020060 .
+ex:020060 a skos:Concept;
+  skos:prefLabel "保健体育"@ja;
+  skos:notation "060";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020065 .
+ex:020065 a skos:Concept;
+  skos:prefLabel "技術・家庭"@ja;
+  skos:notation "065";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020070 .
+ex:020070 a skos:Concept;
+  skos:prefLabel "外国語"@ja;
+  skos:notation "070";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020080 .
+ex:020080 a skos:Concept;
+  skos:prefLabel "道徳"@ja;
+  skos:notation "080";
+  skos:inScheme ex: .
+ex:020 skos:narrower ex:020090 .
+ex:020090 a skos:Concept;
+  skos:prefLabel "実業"@ja;
+  skos:notation "090";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030010 .
+ex:030010 a skos:Concept;
+  skos:prefLabel "国語"@ja;
+  skos:notation "010";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030020 .
+ex:030020 a skos:Concept;
+  skos:prefLabel "社会・地理歴史"@ja;
+  skos:notation "020";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030030 .
+ex:030030 a skos:Concept;
+  skos:prefLabel "数学"@ja;
+  skos:notation "030";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030040 .
+ex:030040 a skos:Concept;
+  skos:prefLabel "理科"@ja;
+  skos:notation "040";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030050 .
+ex:030050 a skos:Concept;
+  skos:prefLabel "保健体育"@ja;
+  skos:notation "050";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030055 .
+ex:030055 a skos:Concept;
+  skos:prefLabel "芸術"@ja;
+  skos:notation "055";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030060 .
+ex:030060 a skos:Concept;
+  skos:prefLabel "外国語"@ja;
+  skos:notation "060";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030070 .
+ex:030070 a skos:Concept;
+  skos:prefLabel "家庭"@ja;
+  skos:notation "070";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030080 .
+ex:030080 a skos:Concept;
+  skos:prefLabel "情報"@ja;
+  skos:notation "080";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030085 .
+ex:030085 a skos:Concept;
+  skos:prefLabel "理数"@ja;
+  skos:notation "085";
+  skos:inScheme ex: .
+ex:030 skos:narrower ex:030090 .
+ex:030090 a skos:Concept;
+  skos:prefLabel "実業"@ja;
+  skos:notation "090";
+  skos:inScheme ex: .
+
+ex:010010 skos:narrower ex:010010100 .
+ex:010010100 a skos:Concept;
   skos:prefLabel "国語"@ja, "Japanese Language"@en;
   skos:notation "100";
   skos:inScheme ex: .
+ex:010010 skos:narrower ex:010010500 .
 ex:010010500 a skos:Concept;
   skos:prefLabel "書写"@ja, "Penmanship"@en;
   skos:notation "500";
   skos:inScheme ex: .
+ex:010010 skos:narrower ex:010010800 .
 ex:010010800 a skos:Concept;
   skos:prefLabel "ローマ字"@ja, "Alphabetical Transcriptions"@en;
   skos:notation "800";
   skos:inScheme ex: .
-
-ex:001020 a skos:Concept;
-  skos:prefLabel "社会"@ja, "Social Studies"@en;
-  skos:narrower ex:001020100, ex:001020500;
-  skos:notation "020";
-  skos:inScheme ex: .
-ex:001020100 a skos:Concept;
-  skos:prefLabel "社会"@ja, "Social Studies"@en;
+ex:010020 skos:narrower ex:010020100 .
+ex:010020100 a skos:Concept;
+  skos:prefLabel "社会"@ja;
   skos:notation "100";
   skos:inScheme ex: .
-ex:001020500 a skos:Concept;
-  skos:prefLabel "地図"@ja, "Map"@en;
+ex:010020 skos:narrower ex:010020500 .
+ex:010020500 a skos:Concept;
+  skos:prefLabel "地図"@ja;
   skos:notation "500";
   skos:inScheme ex: .
-
-ex:001030 a skos:Concept;
-  skos:prefLabel "算数"@ja, "Arithmetic"@en;
-  skos:narrower ex:001030100;
-  skos:notation "030";
-  skos:inScheme ex: .
-ex:001030100 a skos:Concept;
-  skos:prefLabel "算数"@ja, "Arithmetic"@en;
+ex:010030 skos:narrower ex:010030100 .
+ex:010030100 a skos:Concept;
+  skos:prefLabel "算数"@ja;
   skos:notation "100";
   skos:inScheme ex: .
-
-ex:002010 a skos:Concept;
-  skos:prefLabel "国語"@ja, "Japanese Language"@en;
-  skos:notation "010";
+ex:010040 skos:narrower ex:010040100 .
+ex:010040100 a skos:Concept;
+  skos:prefLabel "理科"@ja;
+  skos:notation "100";
   skos:inScheme ex: .
-
-ex:003010 a skos:Concept;
-  skos:prefLabel "国語"@ja, "Japanese Language"@en;
-  skos:notation "010";
+ex:010045 skos:narrower ex:010045100 .
+ex:010045100 a skos:Concept;
+  skos:prefLabel "生活"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:010050 skos:narrower ex:010050100 .
+ex:010050100 a skos:Concept;
+  skos:prefLabel "音楽"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:010055 skos:narrower ex:010055100 .
+ex:010055100 a skos:Concept;
+  skos:prefLabel "図画・工作"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:010060 skos:narrower ex:010060100 .
+ex:010060100 a skos:Concept;
+  skos:prefLabel "家庭"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:010070 skos:narrower ex:010070100 .
+ex:010070100 a skos:Concept;
+  skos:prefLabel "保健"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:010075 skos:narrower ex:010075100 .
+ex:010075100 a skos:Concept;
+  skos:prefLabel "外国語"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:010080 skos:narrower ex:010080100 .
+ex:010080100 a skos:Concept;
+  skos:prefLabel "道徳"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010020 .
+ex:020010020 a skos:Concept;
+  skos:prefLabel "国語 (総合)"@ja;
+  skos:notation "020";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010030 .
+ex:020010030 a skos:Concept;
+  skos:prefLabel "国文法"@ja;
+  skos:notation "030";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010100 .
+ex:020010100 a skos:Concept;
+  skos:prefLabel "国語"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010550 .
+ex:020010550 a skos:Concept;
+  skos:prefLabel "文学"@ja;
+  skos:notation "550";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010600 .
+ex:020010600 a skos:Concept;
+  skos:prefLabel "文学と言語"@ja;
+  skos:notation "600";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010800 .
+ex:020010800 a skos:Concept;
+  skos:prefLabel "書写"@ja;
+  skos:notation "800";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010850 .
+ex:020010850 a skos:Concept;
+  skos:prefLabel "習字"@ja;
+  skos:notation "850";
+  skos:inScheme ex: .
+ex:020010 skos:narrower ex:020010900 .
+ex:020010900 a skos:Concept;
+  skos:prefLabel "ローマ字"@ja;
+  skos:notation "900";
+  skos:inScheme ex: .
+ex:020020 skos:narrower ex:020020100 .
+ex:020020100 a skos:Concept;
+  skos:prefLabel "社会"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020020 skos:narrower ex:020020200 .
+ex:020020200 a skos:Concept;
+  skos:prefLabel "社会 (公民的分野)"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:020020 skos:narrower ex:020020300 .
+ex:020020300 a skos:Concept;
+  skos:prefLabel "社会 (地理的分野)"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:020020 skos:narrower ex:020020400 .
+ex:020020400 a skos:Concept;
+  skos:prefLabel "社会 (歴史的分野)"@ja;
+  skos:notation "400";
+  skos:inScheme ex: .
+ex:020020 skos:narrower ex:020020500 .
+ex:020020500 a skos:Concept;
+  skos:prefLabel "社会 (政治・経済・社会的分野)"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:020020 skos:narrower ex:020020700 .
+ex:020020700 a skos:Concept;
+  skos:prefLabel "日本史"@ja;
+  skos:notation "700";
+  skos:inScheme ex: .
+ex:020020 skos:narrower ex:020020800 .
+ex:020020800 a skos:Concept;
+  skos:prefLabel "地図"@ja;
+  skos:notation "800";
+  skos:inScheme ex: .
+ex:020030 skos:narrower ex:020030100 .
+ex:020030100 a skos:Concept;
+  skos:prefLabel "数学"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020040 skos:narrower ex:020040100 .
+ex:020040100 a skos:Concept;
+  skos:prefLabel "理科"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020040 skos:narrower ex:020040200 .
+ex:020040200 a skos:Concept;
+  skos:prefLabel "理科 (第一分野)"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:020040 skos:narrower ex:020040300 .
+ex:020040300 a skos:Concept;
+  skos:prefLabel "理科 (第二分野)"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:020050 skos:narrower ex:020050100 .
+ex:020050100 a skos:Concept;
+  skos:prefLabel "音楽"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020050 skos:narrower ex:020050300 .
+ex:020050300 a skos:Concept;
+  skos:prefLabel "音楽 (一般)"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:020050 skos:narrower ex:020050500 .
+ex:020050500 a skos:Concept;
+  skos:prefLabel "音楽 (器楽合奏)"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:020055 skos:narrower ex:020055100 .
+ex:020055100 a skos:Concept;
+  skos:prefLabel "美術"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020055 skos:narrower ex:020055500 .
+ex:020055500 a skos:Concept;
+  skos:prefLabel "図画工作"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:020060 skos:narrower ex:020060100 .
+ex:020060100 a skos:Concept;
+  skos:prefLabel "保健"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020060 skos:narrower ex:020060200 .
+ex:020060200 a skos:Concept;
+  skos:prefLabel "保健体育"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065100 .
+ex:020065100 a skos:Concept;
+  skos:prefLabel "技術・家庭"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065200 .
+ex:020065200 a skos:Concept;
+  skos:prefLabel "技術・家庭 (家庭分野)"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065250 .
+ex:020065250 a skos:Concept;
+  skos:prefLabel "技術・家庭 (技術分野)"@ja;
+  skos:notation "250";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065300 .
+ex:020065300 a skos:Concept;
+  skos:prefLabel "技術・家庭 (女子向)"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065350 .
+ex:020065350 a skos:Concept;
+  skos:prefLabel "技術・家庭 (男子向)"@ja;
+  skos:notation "350";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065500 .
+ex:020065500 a skos:Concept;
+  skos:prefLabel "職業・家庭"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065550 .
+ex:020065550 a skos:Concept;
+  skos:prefLabel "職業指導"@ja;
+  skos:notation "550";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065800 .
+ex:020065800 a skos:Concept;
+  skos:prefLabel "家庭生活中心"@ja;
+  skos:notation "800";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065850 .
+ex:020065850 a skos:Concept;
+  skos:prefLabel "都会生活中心"@ja;
+  skos:notation "850";
+  skos:inScheme ex: .
+ex:020065 skos:narrower ex:020065900 .
+ex:020065900 a skos:Concept;
+  skos:prefLabel "農村生活中心"@ja;
+  skos:notation "900";
+  skos:inScheme ex: .
+ex:020070 skos:narrower ex:020070100 .
+ex:020070100 a skos:Concept;
+  skos:prefLabel "英語"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020070 skos:narrower ex:020070800 .
+ex:020070800 a skos:Concept;
+  skos:prefLabel "英語 (総合)"@ja;
+  skos:notation "800";
+  skos:inScheme ex: .
+ex:020070 skos:narrower ex:020070810 .
+ex:020070810 a skos:Concept;
+  skos:prefLabel "英語読本"@ja;
+  skos:notation "810";
+  skos:inScheme ex: .
+ex:020070 skos:narrower ex:020070820 .
+ex:020070820 a skos:Concept;
+  skos:prefLabel "英語読本と英語の実際的使用"@ja;
+  skos:notation "820";
+  skos:inScheme ex: .
+ex:020070 skos:narrower ex:020070830 .
+ex:020070830 a skos:Concept;
+  skos:prefLabel "英語の実際的使用"@ja;
+  skos:notation "830";
+  skos:inScheme ex: .
+ex:020080 skos:narrower ex:020080100 .
+ex:020080100 a skos:Concept;
+  skos:prefLabel "道徳"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020090 skos:narrower ex:020090100 .
+ex:020090100 a skos:Concept;
+  skos:prefLabel "農業"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:020090 skos:narrower ex:020090200 .
+ex:020090200 a skos:Concept;
+  skos:prefLabel "工業"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:020090 skos:narrower ex:020090300 .
+ex:020090300 a skos:Concept;
+  skos:prefLabel "商業"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:020090 skos:narrower ex:020090400 .
+ex:020090400 a skos:Concept;
+  skos:prefLabel "水産"@ja;
+  skos:notation "400";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010100 .
+ex:030010100 a skos:Concept;
+  skos:prefLabel "国語"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010110 .
+ex:030010110 a skos:Concept;
+  skos:prefLabel "現代の国語"@ja;
+  skos:notation "110";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010120 .
+ex:030010120 a skos:Concept;
+  skos:prefLabel "言語文化"@ja;
+  skos:notation "120";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010160 .
+ex:030010160 a skos:Concept;
+  skos:prefLabel "国語総合"@ja;
+  skos:notation "160";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010170 .
+ex:030010170 a skos:Concept;
+  skos:prefLabel "国語表現"@ja;
+  skos:notation "170";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010180 .
+ex:030010180 a skos:Concept;
+  skos:prefLabel "国語 (総合)"@ja;
+  skos:notation "180";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010190 .
+ex:030010190 a skos:Concept;
+  skos:prefLabel "国語 (文学)"@ja;
+  skos:notation "190";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010200 .
+ex:030010200 a skos:Concept;
+  skos:prefLabel "現代文"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010270 .
+ex:030010270 a skos:Concept;
+  skos:prefLabel "現代語"@ja;
+  skos:notation "270";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010280 .
+ex:030010280 a skos:Concept;
+  skos:prefLabel "現代国語"@ja;
+  skos:notation "280";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010290 .
+ex:030010290 a skos:Concept;
+  skos:prefLabel "言語"@ja;
+  skos:notation "290";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010300 .
+ex:030010300 a skos:Concept;
+  skos:prefLabel "古典"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010350 .
+ex:030010350 a skos:Concept;
+  skos:prefLabel "古典 (総合)"@ja;
+  skos:notation "350";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010360 .
+ex:030010360 a skos:Concept;
+  skos:prefLabel "古典 (古文)"@ja;
+  skos:notation "360";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010370 .
+ex:030010370 a skos:Concept;
+  skos:prefLabel "古典 (漢文)"@ja;
+  skos:notation "370";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010380 .
+ex:030010380 a skos:Concept;
+  skos:prefLabel "古典講読"@ja;
+  skos:notation "380";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010390 .
+ex:030010390 a skos:Concept;
+  skos:prefLabel "漢文"@ja;
+  skos:notation "390";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010500 .
+ex:030010500 a skos:Concept;
+  skos:prefLabel "文学"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:030010 skos:narrower ex:030010510 .
+ex:030010510 a skos:Concept;
+  skos:prefLabel "文学と言語"@ja;
+  skos:notation "510";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020050 .
+ex:030020050 a skos:Concept;
+  skos:prefLabel "歴史総合"@ja;
+  skos:notation "050";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020100 .
+ex:030020100 a skos:Concept;
+  skos:prefLabel "世界史"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020200 .
+ex:030020200 a skos:Concept;
+  skos:prefLabel "日本史"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020300 .
+ex:030020300 a skos:Concept;
+  skos:prefLabel "地理"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020320 .
+ex:030020320 a skos:Concept;
+  skos:prefLabel "地理総合"@ja;
+  skos:notation "320";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020350 .
+ex:030020350 a skos:Concept;
+  skos:prefLabel "地図"@ja;
+  skos:notation "350";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020400 .
+ex:030020400 a skos:Concept;
+  skos:prefLabel "現代社会"@ja;
+  skos:notation "400";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020450 .
+ex:030020450 a skos:Concept;
+  skos:prefLabel "政治・経済"@ja;
+  skos:notation "450";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020500 .
+ex:030020500 a skos:Concept;
+  skos:prefLabel "倫理"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020510 .
+ex:030020510 a skos:Concept;
+  skos:prefLabel "倫理・社会"@ja;
+  skos:notation "510";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020520 .
+ex:030020520 a skos:Concept;
+  skos:prefLabel "社会"@ja;
+  skos:notation "520";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020530 .
+ex:030020530 a skos:Concept;
+  skos:prefLabel "一般社会"@ja;
+  skos:notation "530";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020540 .
+ex:030020540 a skos:Concept;
+  skos:prefLabel "時事問題"@ja;
+  skos:notation "540";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020550 .
+ex:030020550 a skos:Concept;
+  skos:prefLabel "公共"@ja;
+  skos:notation "550";
+  skos:inScheme ex: .
+ex:030020 skos:narrower ex:030020600 .
+ex:030020600 a skos:Concept;
+  skos:prefLabel "人文地理"@ja;
+  skos:notation "600";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030100 .
+ex:030030100 a skos:Concept;
+  skos:prefLabel "数学"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030170 .
+ex:030030170 a skos:Concept;
+  skos:prefLabel "数学活用"@ja;
+  skos:notation "170";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030180 .
+ex:030030180 a skos:Concept;
+  skos:prefLabel "数学基礎"@ja;
+  skos:notation "180";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030190 .
+ex:030030190 a skos:Concept;
+  skos:prefLabel "数学一般"@ja;
+  skos:notation "190";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030500 .
+ex:030030500 a skos:Concept;
+  skos:prefLabel "代数・幾何"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030510 .
+ex:030030510 a skos:Concept;
+  skos:prefLabel "幾何"@ja;
+  skos:notation "510";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030520 .
+ex:030030520 a skos:Concept;
+  skos:prefLabel "基礎解析"@ja;
+  skos:notation "520";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030530 .
+ex:030030530 a skos:Concept;
+  skos:prefLabel "解析"@ja;
+  skos:notation "530";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030540 .
+ex:030030540 a skos:Concept;
+  skos:prefLabel "微分・積分"@ja;
+  skos:notation "540";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030550 .
+ex:030030550 a skos:Concept;
+  skos:prefLabel "確率・統計"@ja;
+  skos:notation "550";
+  skos:inScheme ex: .
+ex:030030 skos:narrower ex:030030900 .
+ex:030030900 a skos:Concept;
+  skos:prefLabel "応用数学"@ja;
+  skos:notation "900";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040090 .
+ex:030040090 a skos:Concept;
+  skos:prefLabel "科学と人間生活"@ja;
+  skos:notation "090";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040100 .
+ex:030040100 a skos:Concept;
+  skos:prefLabel "理科"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040160 .
+ex:030040160 a skos:Concept;
+  skos:prefLabel "理科基礎"@ja;
+  skos:notation "160";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040170 .
+ex:030040170 a skos:Concept;
+  skos:prefLabel "理科総合"@ja;
+  skos:notation "170";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040180 .
+ex:030040180 a skos:Concept;
+  skos:prefLabel "総合理科"@ja;
+  skos:notation "180";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040190 .
+ex:030040190 a skos:Concept;
+  skos:prefLabel "基礎理科"@ja;
+  skos:notation "190";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040200 .
+ex:030040200 a skos:Concept;
+  skos:prefLabel "物理"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040250 .
+ex:030040250 a skos:Concept;
+  skos:prefLabel "物理基礎"@ja;
+  skos:notation "250";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040300 .
+ex:030040300 a skos:Concept;
+  skos:prefLabel "化学"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040350 .
+ex:030040350 a skos:Concept;
+  skos:prefLabel "化学基礎"@ja;
+  skos:notation "350";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040400 .
+ex:030040400 a skos:Concept;
+  skos:prefLabel "生物"@ja;
+  skos:notation "400";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040450 .
+ex:030040450 a skos:Concept;
+  skos:prefLabel "生物基礎"@ja;
+  skos:notation "450";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040500 .
+ex:030040500 a skos:Concept;
+  skos:prefLabel "地学"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040550 .
+ex:030040550 a skos:Concept;
+  skos:prefLabel "地学基礎"@ja;
+  skos:notation "550";
+  skos:inScheme ex: .
+ex:030040 skos:narrower ex:030040900 .
+ex:030040900 a skos:Concept;
+  skos:prefLabel "理科表"@ja;
+  skos:notation "900";
+  skos:inScheme ex: .
+ex:030050 skos:narrower ex:030050100 .
+ex:030050100 a skos:Concept;
+  skos:prefLabel "保健体育"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030055 skos:narrower ex:030055100 .
+ex:030055100 a skos:Concept;
+  skos:prefLabel "音楽"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030055 skos:narrower ex:030055200 .
+ex:030055200 a skos:Concept;
+  skos:prefLabel "美術"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030055 skos:narrower ex:030055300 .
+ex:030055300 a skos:Concept;
+  skos:prefLabel "工芸"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:030055 skos:narrower ex:030055400 .
+ex:030055400 a skos:Concept;
+  skos:prefLabel "書道"@ja;
+  skos:notation "400";
+  skos:inScheme ex: .
+ex:030055 skos:narrower ex:030055900 .
+ex:030055900 a skos:Concept;
+  skos:prefLabel "美術 (図画)"@ja;
+  skos:notation "900";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060015 .
+ex:030060015 a skos:Concept;
+  skos:prefLabel "英語表現"@ja;
+  skos:notation "015";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060020 .
+ex:030060020 a skos:Concept;
+  skos:prefLabel "英語会話"@ja;
+  skos:notation "020";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060100 .
+ex:030060100 a skos:Concept;
+  skos:prefLabel "英語"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060200 .
+ex:030060200 a skos:Concept;
+  skos:prefLabel "英語コミュニケーション"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060450 .
+ex:030060450 a skos:Concept;
+  skos:prefLabel "コミュニケーション英語"@ja;
+  skos:notation "450";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060500 .
+ex:030060500 a skos:Concept;
+  skos:prefLabel "オーラル・コミュニケーション"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060600 .
+ex:030060600 a skos:Concept;
+  skos:prefLabel "論理・表現"@ja;
+  skos:notation "600";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060700 .
+ex:030060700 a skos:Concept;
+  skos:prefLabel "リーディング"@ja;
+  skos:notation "700";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060750 .
+ex:030060750 a skos:Concept;
+  skos:prefLabel "ライティング"@ja;
+  skos:notation "750";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060800 .
+ex:030060800 a skos:Concept;
+  skos:prefLabel "初級英語"@ja;
+  skos:notation "800";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060810 .
+ex:030060810 a skos:Concept;
+  skos:prefLabel "英語読本"@ja;
+  skos:notation "810";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060820 .
+ex:030060820 a skos:Concept;
+  skos:prefLabel "英語読本と英語の実際的使用"@ja;
+  skos:notation "820";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060830 .
+ex:030060830 a skos:Concept;
+  skos:prefLabel "英語の実際的使用"@ja;
+  skos:notation "830";
+  skos:inScheme ex: .
+ex:030060 skos:narrower ex:030060840 .
+ex:030060840 a skos:Concept;
+  skos:prefLabel "英作および文法"@ja;
+  skos:notation "840";
+  skos:inScheme ex: .
+ex:030070 skos:narrower ex:030070100 .
+ex:030070100 a skos:Concept;
+  skos:prefLabel "家庭"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030070 skos:narrower ex:030070200 .
+ex:030070200 a skos:Concept;
+  skos:prefLabel "家庭基礎"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030070 skos:narrower ex:030070300 .
+ex:030070300 a skos:Concept;
+  skos:prefLabel "家庭総合"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:030070 skos:narrower ex:030070500 .
+ex:030070500 a skos:Concept;
+  skos:prefLabel "生活デザイン"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:030080 skos:narrower ex:030080100 .
+ex:030080100 a skos:Concept;
+  skos:prefLabel "情報"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030080 skos:narrower ex:030080200 .
+ex:030080200 a skos:Concept;
+  skos:prefLabel "社会と情報"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030080 skos:narrower ex:030080300 .
+ex:030080300 a skos:Concept;
+  skos:prefLabel "情報の科学"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:030085 skos:narrower ex:030085100 .
+ex:030085100 a skos:Concept;
+  skos:prefLabel "理数探究基礎"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030090 skos:narrower ex:030090100 .
+ex:030090100 a skos:Concept;
+  skos:prefLabel "農業"@ja;
+  skos:notation "100";
+  skos:inScheme ex: .
+ex:030090 skos:narrower ex:030090200 .
+ex:030090200 a skos:Concept;
+  skos:prefLabel "工業"@ja;
+  skos:notation "200";
+  skos:inScheme ex: .
+ex:030090 skos:narrower ex:030090300 .
+ex:030090300 a skos:Concept;
+  skos:prefLabel "商業"@ja;
+  skos:notation "300";
+  skos:inScheme ex: .
+ex:030090 skos:narrower ex:030090400 .
+ex:030090400 a skos:Concept;
+  skos:prefLabel "水産"@ja;
+  skos:notation "400";
+  skos:inScheme ex: .
+ex:030090 skos:narrower ex:030090500 .
+ex:030090500 a skos:Concept;
+  skos:prefLabel "看護"@ja;
+  skos:notation "500";
+  skos:inScheme ex: .
+ex:030090 skos:narrower ex:030090600 .
+ex:030090600 a skos:Concept;
+  skos:prefLabel "福祉"@ja;
+  skos:notation "600";
   skos:inScheme ex: .
